@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+#navbar {
+position: fixed;
+display: flex;
+justify-content: flex-end;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #1d1d1d;
+}
+
+#nav-list {
+    display: flex;
+  list-style-type: none; 
+  margin: 0;
+  padding: 0; 
+  margin-right: 20px;
+ 
+}
+.nav-link {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+}
+.nav-link:hover {
+    background-color: #4e4e4e;
+}
+#welcome-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(b3.png);
+    background-color: rgb(39, 39, 39);
+
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+  font-family: Poppins;
+  font-weight: 700;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(43, 43, 43);
+  font-family: Poppins;
+  font-weight: 700;
+  
+}
+#projects {
+  text-align: center;
+  padding: 60px;
+    background-image: url(bg2.png);
+}
+.projects-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;
+ grid-gap: 80px 40px;
+ margin-top: 80px;
+  
+}
+.project-tile {
+  background-color: rgb(31, 31, 31);
+  width: 350px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Poppins;
+  
+}
+.project-tile:hover {
+  animation-name: tile;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes tile {
+  100% {
+    background-color: rgb(70, 70, 70);
+  }
+}
+.project-img {
+  width: 350px;
+  height: 350px;
+}
+#github {
+  height: 100vh;
+  width: 100%;
+  background-image: url(bg1.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gitxt {
+font-size: 30px;
+font-family: Poppins;
+color: rgb(180, 180, 180);
+font-style: italic;
+}
+#profile-link {
+color: rgb(129, 129, 129);
+text-decoration: none;
+font-size: 50px;
+text-align: center;
+margin-top: 50px;
+text-shadow: 2px 2px 1px rgb(22, 22, 22);
+transition: transform 0.3s ease-out;
+}
+#profile-link:hover {
+  transform: translateY(8px);
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+}
